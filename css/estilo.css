@@ -1,0 +1,496 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 241, 237);
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  border-bottom: 4px solid black;
+  text-align: center;
+  padding: 15px 30px;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 15px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  margin-right: 10px;
+}
+
+nav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 25px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 900;
+  color: black;
+  text-transform: uppercase;
+}
+
+main {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+}
+
+/* BANNER DE INDEX */
+.banner-container {
+  position: relative;
+  text-align: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.banner-title {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  background-color: black transparent;
+  padding: 10px 20px;
+  font-size: 5em;
+}
+
+.banner-subtitle {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  font-size: 4em;
+}
+
+.banner-background {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Banner responsive */
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 3em;
+  }
+  .banner-subtitle {
+    font-size: 2em;
+  }
+}
+@media (max-width: 1200px) {
+  .banner-title {
+    font-size: 2em;
+  }
+  .banner-subtitle {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .banner-title {
+    font-size: 3em;
+  }
+  .banner-subtitle {
+    font-size: 2em;
+  }
+}
+/* CATALOGO DE PRODUCTOS */
+.contenedorProductos {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  border: 3px solid black;
+  padding: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .contenedorProductos {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+.contenedorProductos p {
+  background-color: aliceblue;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.img-container {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgProducto {
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+/* BOTONES DE LOS PRODUCTOS */
+.botonProducto {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.botonProducto:hover {
+  background-color: #0056b3;
+}
+
+.tituloProduccion {
+  border: 4px solid transparent;
+  border-image: linear-gradient(to right, #fcc225, #f8f8f8, #f8cf17);
+  border-image-slice: 1;
+  padding: 10px;
+}
+
+.parrafosEnLinea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 15px 0;
+}
+
+.parrafoProduccion {
+  flex: 0 0 auto;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  border-left: 4px solid #ffb920;
+  padding: 10px 20px;
+  margin-top: 15px;
+  margin-right: 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: #333;
+  width: 33%;
+}
+
+@media screen and (max-width: 768px) {
+  .parrafosEnLinea {
+    display: block;
+  }
+  .parrafoProduccion {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+/* Sucursales */
+.titulo-h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-h2 {
+  font-size: 24px;
+  color: #007BFF;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+figcaption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-indicators {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: 10px;
+  z-index: 1;
+}
+
+/* ENLACES DE IFRAME */
+iframe {
+  display: block;
+  margin: auto;
+}
+
+.miFooter {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.miFooter h3 {
+  font-size: 16px;
+}
+
+/* FORMULARIO DE CONTACTO */
+form {
+  margin-top: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+input[type=text],
+textarea {
+  background-color: #f2f2f2;
+  border: 2px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input[type=text]:focus,
+textarea:focus {
+  border: 2px solid #007BFF;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo para los botones de enviar y restablecer */
+.formularioNormal {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.formularioNormal:hover {
+  background-color: #0056b3;
+}
+
+input[type=reset] {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+input[type=reset]:hover {
+  background-color: #c9302c;
+}
+
+/* Estilos para hacer el h5 y sus párrafos responsive */
+@media (max-width: 768px) {
+  h5 {
+    font-size: 24px;
+  }
+  h5 p {
+    font-size: 16px;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* INDEX */
+/* Estilos para el h5 y sus párrafos */
+h5 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px auto;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+h5 p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.6;
+  margin: 15px auto;
+  color: #fff;
+  font-weight: 600;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.muestra-container {
+  position: relative;
+  width: calc(50% - 20px);
+  margin: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.muestra-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: small;
+  font-weight: bold;
+}
+
+.muestra-container:hover .muestra-overlay {
+  opacity: 1;
+}
+
+.introHistoria {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #020202;
+  text-transform: uppercase;
+  margin: 20px auto;
+}
+
+.introMuestras {
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+  margin: 15px auto;
+  font-weight: 600;
+  line-height: 1.6;
+  max-width: 80%;
+}
+
+h4 {
+  padding: 15px;
+  margin: 15px;
+}
+
+/* Conocenos/Nosotros */
+.nosotros-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.nosoTros {
+  text-align: left;
+  width: 30%;
+  padding-right: 20px;
+  margin-left: 25vw;
+  margin-right: 10px;
+  margin-top: 15vh;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.textoNosotrosContainer {
+  width: 65%;
+  text-align: left;
+}
+
+.textoNosotros {
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-top: 5vh;
+  width: 65%;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .nosoTros {
+    font-size: 1.5em;
+    margin-top: 10vh;
+  }
+  .textoNosotros {
+    font-size: 1.2em;
+    margin-top: 3vh;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

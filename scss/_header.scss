@@ -1,0 +1,56 @@
+header {
+    border-bottom: 4px solid black;
+    text-align: center;
+    padding: 15px 30px;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 15px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 10px;
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 25px;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+    text-transform: uppercase;
+}
+
+main {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}

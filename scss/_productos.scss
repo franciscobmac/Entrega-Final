@@ -1,0 +1,62 @@
+/* CATALOGO DE PRODUCTOS */
+
+.contenedorProductos {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    border: 3px solid black;
+    padding: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .contenedorProductos {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+.contenedorProductos p {
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+.img-container {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgProducto {
+    max-width: 100%;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+/* BOTONES DE LOS PRODUCTOS */
+
+.botonProducto {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}

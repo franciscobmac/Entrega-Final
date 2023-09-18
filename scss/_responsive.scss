@@ -1,0 +1,22 @@
+/* Estilos para hacer el h5 y sus párrafos responsive */
+@media (max-width: 768px) {
+    h5 {
+        font-size: 24px;
+        
+    }
+
+    h5 p {
+        font-size: 16px;
+        
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

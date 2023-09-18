@@ -1,0 +1,86 @@
+/* Conocenos/Nosotros */
+
+.nosotros-container {
+    display: flex;
+    flex-direction: row;
+
+    
+    justify-content: space-between;
+
+    
+    align-items: flex-start;
+
+    
+    margin-top: 20px;
+
+    
+}
+
+.nosoTros {
+    text-align: left;
+    width: 30%;
+
+    
+    padding-right: 20px;
+
+    
+    margin-left: 25vw;
+
+    
+    margin-right: 10px;
+
+    
+    margin-top: 15vh;
+    font-size: 2em;
+
+    
+    font-weight: bold;
+}
+
+
+
+.textoNosotrosContainer {
+    width: 65%;
+
+    
+    text-align: left;
+
+    
+}
+
+
+
+.textoNosotros {
+    margin-bottom: 10px;
+
+    
+    font-size: 18px;
+
+    
+    margin-top: 5vh;
+    width: 65%;
+    font-size: x-large;
+}
+
+
+@media (max-width: 768px) {
+    
+
+    .nosoTros {
+        font-size: 1.5em;
+
+        
+        margin-top: 10vh;
+
+        
+    }
+
+    .textoNosotros {
+        font-size: 1.2em;
+
+        
+        margin-top: 3vh;
+
+        
+    }
+}

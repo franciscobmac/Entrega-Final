@@ -1,0 +1,137 @@
+/* INDEX */
+/* Estilos para el h5 y sus párrafos */
+
+h5 {
+    font-size: 28px;
+
+
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto;
+
+
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+
+    padding: 20px;
+
+
+    border-radius: 10px;
+
+
+
+    p {
+        font-size: 18px;
+
+
+        text-align: center;
+        line-height: 1.6;
+        margin: 15px auto;
+
+
+        color: #fff;
+
+
+        font-weight: 600;
+        width: 70%;
+        background-color: rgba(0, 0, 0, 0.7);
+
+
+        padding: 15px;
+
+
+        border-radius: 5px;
+
+
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+
+    }
+}
+
+
+
+.muestra-container {
+    position: relative;
+    width: calc(50% - 20px);
+    margin: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.muestra-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: small;
+    font-weight: bold;
+}
+
+.muestra-container:hover .muestra-overlay {
+    opacity: 1;
+}
+
+.introHistoria {
+    font-size: 28px;
+
+
+    font-weight: bold;
+
+
+    text-align: center;
+
+
+    color: #020202;
+
+
+    text-transform: uppercase;
+
+
+    margin: 20px auto;
+
+
+}
+
+.introMuestras {
+    font-size: 18px;
+
+
+    text-align: center;
+
+
+    color: #333;
+
+
+    margin: 15px auto;
+
+
+    font-weight: 600;
+
+
+    line-height: 1.6;
+
+
+    max-width: 80%;
+
+
+}
+
+h4 {
+    padding: 15px;
+    margin: 15px;
+}
