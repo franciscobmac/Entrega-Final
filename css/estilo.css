@@ -25,6 +25,7 @@ header {
   padding: 2px 15px;
   background-color: white;
   border: 1px solid black;
+  font-weight: bolder;
 }
 
 .navbar-brand {
@@ -88,6 +89,7 @@ h1 {
   background-color: black transparent;
   padding: 10px 20px;
   font-size: 5em;
+  font-weight: bolder;
 }
 
 .banner-subtitle {
@@ -129,6 +131,10 @@ h1 {
     font-size: 2em;
   }
 }
+.bg-imagen {
+  background-image: url(../img/profesionaldetraje.jpg);
+}
+
 /* CATALOGO DE PRODUCTOS */
 .contenedorProductos {
   width: calc(33.33% - 20px);
@@ -275,10 +281,15 @@ figcaption {
 
 /* ENLACES DE IFRAME */
 iframe {
-  display: block;
-  margin: auto;
+  max-width: 70%;
+  min-height: 100%;
 }
 
+@media (max-width: 768px) {
+  iframe {
+    width: 90%;
+  }
+}
 .miFooter {
   background-color: #333;
   color: white;
@@ -348,6 +359,49 @@ input[type=reset]:hover {
   background-color: #c9302c;
 }
 
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.info-contacto {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.info-contacto h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-contacto p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .contacto-info {
+    padding: 15px;
+    font-size: 14px;
+  }
+  .info-contacto h3 {
+    font-size: 20px;
+  }
+  .info-contacto p {
+    font-size: 14px;
+  }
+}
 /* Estilos para hacer el h5 y sus párrafos responsive */
 @media (max-width: 768px) {
   h5 {
@@ -380,13 +434,13 @@ h5 {
   border-radius: 10px;
 }
 h5 p {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   line-height: 1.6;
   margin: 15px auto;
   color: #fff;
   font-weight: 600;
-  width: 70%;
+  max-width: 90%;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 15px;
   border-radius: 5px;
@@ -459,33 +513,38 @@ h4 {
 }
 
 .nosoTros {
-  text-align: left;
+  text-align: center;
   width: 30%;
   padding-right: 20px;
-  margin-left: 25vw;
-  margin-right: 10px;
-  margin-top: 15vh;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .nosoTros {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+  }
+}
 .textoNosotrosContainer {
   width: 65%;
   text-align: left;
 }
 
 .textoNosotros {
-  margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 1.5em;
   margin-top: 5vh;
-  width: 65%;
-  font-size: x-large;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
-  .nosoTros {
-    font-size: 1.5em;
-    margin-top: 10vh;
+  .textoNosotrosContainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .textoNosotros {
     font-size: 1.2em;

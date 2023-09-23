@@ -3,84 +3,49 @@
 .nosotros-container {
     display: flex;
     flex-direction: row;
-
-    
     justify-content: space-between;
-
-    
     align-items: flex-start;
-
-    
     margin-top: 20px;
-
-    
 }
 
 .nosoTros {
-    text-align: left;
+    text-align: center;
     width: 30%;
-
-    
     padding-right: 20px;
-
-    
-    margin-left: 25vw;
-
-    
-    margin-right: 10px;
-
-    
-    margin-top: 15vh;
-    font-size: 2em;
-
-    
+    font-size: 1.5em;
     font-weight: bold;
 }
 
-
+@media (max-width: 768px) {
+    .nosoTros {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10vh;
+    }
+}
 
 .textoNosotrosContainer {
     width: 65%;
-
-    
     text-align: left;
-
-    
 }
-
-
 
 .textoNosotros {
-    margin-bottom: 10px;
-
-    
-    font-size: 18px;
-
-    
+    font-size: 1.5em;
     margin-top: 5vh;
-    width: 65%;
-    font-size: x-large;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
-
 @media (max-width: 768px) {
-    
-
-    .nosoTros {
-        font-size: 1.5em;
-
-        
-        margin-top: 10vh;
-
-        
+    .textoNosotrosContainer {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .textoNosotros {
         font-size: 1.2em;
-
-        
         margin-top: 3vh;
-
-        
     }
 }
