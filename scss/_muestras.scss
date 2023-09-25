@@ -52,6 +52,16 @@ h5 {
     }
 }
 
+@media (max-width: 768px) {
+    h5 {
+        font-size: 20px;
+    }
+
+    h5 p {
+        font-size: 12px;
+    }
+}
+
 
 
 .muestra-container {
@@ -80,7 +90,25 @@ h5 {
     transition: opacity 0.3s ease-in-out;
     font-size: small;
     font-weight: bold;
+    padding: 0px;
 }
+
+.muestra-overlay p {
+    font-size: small;
+}
+
+@media (max-width:768px) {
+    .muestra-overlay p {
+        font-size: 12px;
+    }  
+}
+
+@media (max-width:768px) {
+    .descMuestra{
+        display: none;
+    }    
+}
+
 
 .muestra-container:hover .muestra-overlay {
     opacity: 1;

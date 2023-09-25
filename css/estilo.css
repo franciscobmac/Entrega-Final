@@ -83,7 +83,7 @@ h1 {
 .banner-title {
   position: absolute;
   top: 35%;
-  left: 50%;
+  left: 45%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
   background-color: black transparent;
@@ -99,7 +99,8 @@ h1 {
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
   padding: 10px 20px;
-  font-size: 4em;
+  font-size: 5em;
+  font-weight: bold;
 }
 
 .banner-background {
@@ -287,7 +288,7 @@ iframe {
 
 @media (max-width: 768px) {
   iframe {
-    width: 90%;
+    width: fit-content;
   }
 }
 .miFooter {
@@ -447,6 +448,14 @@ h5 p {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+  h5 {
+    font-size: 20px;
+  }
+  h5 p {
+    font-size: 12px;
+  }
+}
 .muestra-container {
   position: relative;
   width: calc(50% - 20px);
@@ -473,8 +482,23 @@ h5 p {
   transition: opacity 0.3s ease-in-out;
   font-size: small;
   font-weight: bold;
+  padding: 0px;
 }
 
+.muestra-overlay p {
+  font-size: small;
+}
+
+@media (max-width: 768px) {
+  .muestra-overlay p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .descMuestra {
+    display: none;
+  }
+}
 .muestra-container:hover .muestra-overlay {
   opacity: 1;
 }

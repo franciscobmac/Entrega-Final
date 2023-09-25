@@ -17,7 +17,7 @@
 .banner-title {
     position: absolute;
     top: 35%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
     background-color: black transparent;
@@ -33,7 +33,8 @@
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
     padding: 10px 20px;
-    font-size: 4em;
+    font-size: 5em;
+    font-weight: bold;
 }
 
 .banner-background {
