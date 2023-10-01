@@ -1,7 +1,7 @@
 /* BANNER DE INDEX */
 @mixin banners {
-    width: 100%;
-    height: 60vh;
+    width: 98%;
+    height: 35vh;
     object-fit: cover;
 }
 
@@ -16,7 +16,7 @@
 
 .banner-title {
     position: absolute;
-    top: 35%;
+    top: 33%;
     left: 45%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
@@ -28,12 +28,12 @@
 
 .banner-subtitle {
     position: absolute;
-    top: 65%;
-    left: 50%;
+    top: 70%;
+    left: 46%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
     padding: 10px 20px;
-    font-size: 5em;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -49,7 +49,7 @@
     }
 
     .banner-subtitle {
-        font-size: 2em;
+        font-size: 1em;
     }
 }
 
@@ -72,6 +72,7 @@
         font-size: 2em;
     }
 }
-.bg-imagen{
+
+.bg-imagen {
     background-image: url(../img/profesionaldetraje.jpg);
 }

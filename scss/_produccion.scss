@@ -1,6 +1,6 @@
 .tituloProduccion {
     border: 4px solid transparent;
-    border-image: linear-gradient(to right,$color-dorado);
+    border-image: linear-gradient(to right, $color-dorado);
     border-image-slice: 1;
     padding: 10px;
 }
@@ -33,16 +33,10 @@
 @media screen and (max-width: 768px) {
     .parrafosEnLinea {
         display: block;
-
-        
     }
 
     .parrafoProduccion {
         width: 100%;
-
-        
         margin: 15px 0;
-
-        
     }
 }

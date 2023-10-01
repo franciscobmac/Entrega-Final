@@ -1,4 +1,16 @@
-/* CATALOGO DE PRODUCTOS */
+%botonComun {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
 
 .contenedorProductos {
     width: calc(33.33% - 20px);
@@ -45,18 +57,9 @@
     animation: fade-in 1s ease-in-out forwards;
 }
 
-/* BOTONES DE LOS PRODUCTOS */
+/* Botones de productos */
 
 .botonProducto {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-
-    &:hover {
-        background-color: #0056b3;
-    }
+    @extend %botonComun;
+    font-weight: bold;
 }

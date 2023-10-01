@@ -1,52 +1,94 @@
-/* Conocenos/Nosotros */
-
-.nosotros-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 20px;
-}
-
+/* Estilos para el texto "Acerca de Nosotros" en pantallas grandes */
 .nosoTros {
-    text-align: center;
-    width: 30%;
-    padding-right: 20px;
-    font-size: 1.5em;
+    font-size: 3em;
     font-weight: bold;
-}
-
-@media (max-width: 768px) {
-    .nosoTros {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10vh;
-    }
-}
-
-.textoNosotrosContainer {
-    width: 65%;
-    text-align: left;
+    color: #333;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 90%;
+    padding: 0 20px;
 }
 
 .textoNosotros {
-    font-size: 1.5em;
-    margin-top: 5vh;
+    font-size: 1.3em;
     line-height: 1.6;
-    font-weight: 400;
+    color: #666;
+    text-align: justify;
+    margin-bottom: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-@media (max-width: 768px) {
-    .textoNosotrosContainer {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+.textoNosotros h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007BFF;
+    margin: 15px 0;
+}
+
+@media (max-width: 991px) {
+    .nosoTros {
+        font-size: 22px;
+        margin: 20px auto;
+        max-width: 600px;
+        padding: 0 15px;
     }
 
     .textoNosotros {
-        font-size: 0.8em;
-        margin-top: 3vh;
-        font-weight: bolder;
+        font-size: 16px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 15px;
     }
+    .textoNosotros h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nosoTros {
+        font-size: 20px;
+        margin: 20px auto;
+        max-width: 400px;
+        padding: 0 10px;
+    }
+
+    .textoNosotros {
+        font-size: 14px;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .textoNosotros h3 {
+        font-size: 16px;
+    }
+}
+
+
+.redeSociales {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.listaSociales {
+    list-style: none;
+    padding: 0;
+}
+
+.listaSociales li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.redIcono {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007BFF;
+    transition: color 0.3s ease-in-out;
+}
+
+.redIcono:hover {
+    color: #0056b3;
 }

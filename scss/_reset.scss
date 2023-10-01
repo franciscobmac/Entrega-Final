@@ -8,3 +8,32 @@ body {
     background-color: rgb(243, 241, 237);
     font-family: 'Roboto', sans-serif;
 }
+
+// Error 404
+
+.textoError {
+    background-image: url('../img/error.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    margin: 2% auto;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media (max-width: 991px) {
+    .textoError {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .textoError {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+}

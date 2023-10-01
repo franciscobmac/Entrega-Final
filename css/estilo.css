@@ -11,6 +11,31 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.textoError {
+  background-image: url("../img/error.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 60%;
+  height: 100%;
+  margin: 2% auto;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 991px) {
+  .textoError {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .textoError {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+}
 header {
   border-bottom: 4px solid black;
   text-align: center;
@@ -60,6 +85,7 @@ main {
   margin: 5px;
   padding: 5px;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 h1 {
@@ -75,14 +101,14 @@ h1 {
 }
 
 .banner-image {
-  width: 100%;
-  height: 60vh;
+  width: 98%;
+  height: 35vh;
   object-fit: cover;
 }
 
 .banner-title {
   position: absolute;
-  top: 35%;
+  top: 33%;
   left: 45%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
@@ -94,12 +120,12 @@ h1 {
 
 .banner-subtitle {
   position: absolute;
-  top: 65%;
-  left: 50%;
+  top: 70%;
+  left: 46%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
   padding: 10px 20px;
-  font-size: 5em;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -113,7 +139,7 @@ h1 {
     font-size: 3em;
   }
   .banner-subtitle {
-    font-size: 2em;
+    font-size: 1em;
   }
 }
 @media (max-width: 1200px) {
@@ -136,7 +162,19 @@ h1 {
   background-image: url(../img/profesionaldetraje.jpg);
 }
 
-/* CATALOGO DE PRODUCTOS */
+.botonProducto {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.botonProducto:hover {
+  background-color: #0056b3;
+}
+
 .contenedorProductos {
   width: calc(33.33% - 20px);
   margin: 10px;
@@ -181,18 +219,9 @@ h1 {
   animation: fade-in 1s ease-in-out forwards;
 }
 
-/* BOTONES DE LOS PRODUCTOS */
+/* Botones de productos */
 .botonProducto {
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-.botonProducto:hover {
-  background-color: #0056b3;
+  font-weight: bold;
 }
 
 .tituloProduccion {
@@ -292,6 +321,10 @@ iframe {
   }
 }
 .miFooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: #333;
   color: white;
   text-align: center;
@@ -331,7 +364,7 @@ textarea:focus {
   box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Estilo para los botones de enviar y restablecer */
+/* Estilo de botones de formulario */
 .formularioNormal {
   background-color: #007BFF;
   color: white;
@@ -421,7 +454,6 @@ input[type=reset]:hover {
   }
 }
 /* INDEX */
-/* Estilos para el h5 y sus párrafos */
 h5 {
   font-size: 28px;
   font-weight: bold;
@@ -527,54 +559,93 @@ h4 {
   margin: 15px;
 }
 
-/* Conocenos/Nosotros */
-.nosotros-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 20px;
-}
-
+/* Estilos para el texto "Acerca de Nosotros" en pantallas grandes */
 .nosoTros {
-  text-align: center;
-  width: 30%;
-  padding-right: 20px;
-  font-size: 1.5em;
+  font-size: 3em;
   font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  .nosoTros {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10vh;
-  }
-}
-.textoNosotrosContainer {
-  width: 65%;
-  text-align: left;
+  color: #333;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 90%;
+  padding: 0 20px;
 }
 
 .textoNosotros {
-  font-size: 1.5em;
-  margin-top: 5vh;
+  font-size: 1.3em;
   line-height: 1.6;
-  font-weight: 400;
+  color: #666;
+  text-align: justify;
+  margin-bottom: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-@media (max-width: 768px) {
-  .textoNosotrosContainer {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.textoNosotros h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007BFF;
+  margin: 15px 0;
+}
+
+@media (max-width: 991px) {
+  .nosoTros {
+    font-size: 22px;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 0 15px;
   }
   .textoNosotros {
-    font-size: 0.8em;
-    margin-top: 3vh;
-    font-weight: bolder;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
+  .textoNosotros h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .nosoTros {
+    font-size: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 0 10px;
+  }
+  .textoNosotros {
+    font-size: 14px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .textoNosotros h3 {
+    font-size: 16px;
+  }
+}
+.redeSociales {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.listaSociales {
+  list-style: none;
+  padding: 0;
+}
+
+.listaSociales li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.redIcono {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007BFF;
+  transition: color 0.3s ease-in-out;
+}
+
+.redIcono:hover {
+  color: #0056b3;
 }
 
 /*# sourceMappingURL=estilo.css.map */
