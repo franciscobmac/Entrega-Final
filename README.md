@@ -47,6 +47,7 @@ A continuación, te proporciono algunos enlaces útiles:
 
 - [Repositorio en GitHub](https://github.com/franciscobmac/Entrega-Final)
 - [Sitio Web en vivo](https://marmolelarte.netlify.app/)
+- [Sitio en GitPages](https://franciscobmac.github.io/Entrega-Final/)
 
 ## Autor
 
