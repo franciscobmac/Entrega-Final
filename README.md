@@ -41,6 +41,13 @@ En esta sección ficticia, encontrarás detalles sobre el origen y el funcionami
 - Página de error 404 para los enlaces de compra/carrito.
 - Uso de archivos `.gitignore` para gestionar archivos y directorios que no se deben incluir en el repositorio.
 
+## Enlaces
+
+A continuación, te proporciono algunos enlaces útiles:
+
+- [Repositorio en GitHub](https://github.com/franciscobmac/Entrega-Final)
+- [Sitio Web en vivo](https://marmolelarte.netlify.app/)
+
 ## Autor
 
 - **Francisco**: [GitHub Profile](https://github.com/franciscobmac)
